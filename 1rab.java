@@ -3,12 +3,12 @@ public class Main{
     public static void main(String[] args){
         Scanner scanner=new Scanner(System.in);
         System.out.println("Введите строку 1");
-        String firstString=scanner.nextLine();
+        String first=scanner.nextLine();
         System.out.println("Введите строку 2");
-        String secondString=scanner.nextLine();
-        System.out.println(checkEnding(firstString, secondString));
+        String second=scanner.nextLine();
+        System.out.println(check(first, second));
     }
-    public static boolean checkEnding(String firstString, String secondString){
-        return firstString.endsWith(secondString);
+    public static boolean check(String first, String second){
+        return first.endsWith(second);
     }
 }
